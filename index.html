@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Camera Rental</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <section class="menu">
+      <a href="#home" style="color: white; text-decoration: none;"> Home </a>
+      <a href="#about" style="color: white; text-decoration: none;"> Rental Services </a>
+      <a href="#about" style="color: white; text-decoration: none;">Contact </a>
+    </section>
+    <h1>Camera Rental Request</h1>
+  </header>
+  <div class= "container">
+    <h2><strong>Available Cameras</strong></h2>
+    <table border="1">
+      <th style="background-color: teal; border:none;">Image </th>
+      <th style="background-color: teal; border:none;">Product</th>
+      <th style="background-color: teal; border:none;">Description</th>
+      <th style="background-color: teal; border:none;">Rental<br>Cost</th>
+      <tr>
+        <td><img src="camera canon.png"></td>
+        <td>Canon EOS R3</td>
+        <td>Best professional sports camera with a 24.1MP Sensor</td>
+        <td>$50/day</td>
+      </tr>
+      <tr>
+        <td><img src= "nikon.png"></td>
+        <td>Nikon Z9</td>
+        <td>Best all-round professional camera with 45.7MP Sensor</td>
+        <td>$40/day</td>
+      </tr>
+      <tr>
+        <td><img src= "sony.png"></td>
+        <td>Sony A1</td>
+        <td>High-end camera with 50.1MP sensor</td>
+        <td>$60/day</td>
+      </tr>
+      </table>
+  </div>
+  <div class="renting">
+    <h2><strong>Rent Camera</strong></h2>
+      <form>
+        <label for="cameras"><h3>Select a Camera:</h3></label><br>
+          <select name="dropdown" id="dropdown">
+            <option value="Canon EOS R3">Canon EOS R3</option>
+            <option value="Nikon Z9">Nikon Z9</option>
+            <option value="Sony A1">Sony A1</option> 
+          </select><br>
+        <label for="Rental Duration"<h3>Rental Duration (in days):</h3></label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="7">
+        <label for="Additional Requests"><h3>Additional Requests</h3></label><br>
+        <textarea id="requests" id="requests" name="requests" rows="4" cols="50"> </textarea> <br>
+        <label for="email"<h3><strong>Email:</strong></h3></label><br>
+          <input type="text" id="email" name="email"><br>
+        <button>Submit</button>
+      </form>
+    
+  </div>
+</body>
+</html>
